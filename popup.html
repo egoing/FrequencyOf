@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+  <script src="jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-weight: 200;
+    }
+    
+    body {
+      padding: 1rem;
+      width: 400px;
+      overflow-y: scroll;
+      margin: 0;
+      font-family: 'Source Sans Pro', sans-serif;
+    }
+    
+    h1{
+      margin-top:0;
+      font-size:2rem;
+    }
+    
+    textarea {
+      width: 100%;
+      margin-bottom: 0.3rem;
+      border:1px solid rgba(0, 0, 0, 0.15);
+      font-size:1rem;
+    }
+    
+    #result {
+      border-bottom: 1px solid black;
+      padding: 0.4rem 0;
+      text-align: right;
+      font-size: 1.2rem;
+    }
+    
+    select {
+      float: left;
+      font-size: 1.2rem;
+    }
+    
+    option{
+      
+    }
+    
+    #stat_nest{
+      height:10rem;
+      overflow:scroll;
+    }
+    
+    #stat {
+      padding-left: 0;
+      list-style: none;
+      overflow-y: scroll;
+    }
+    
+  </style>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>FrequencyOf</h1>
+  <form action="">
+    <textarea id="myword" rows="4"></textarea>
+  </form>
+  <select name="" id="language">
+    <option value="zh">中文</option>
+    <option value="en">english</option>
+    <option value="es">Español</option>
+    <option value="fr">Français</option>
+  </select>
+  <div id="result"></div>
+  <div id="stat_nest">
+    <table id="stat">
+    </table>
+  </div>
+
+</body>
+
+</html>
